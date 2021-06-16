@@ -448,7 +448,7 @@ table a, #comments a{background-color:inherit;}
 
 	#topbar{text-align:center;}
 	#topbar > div:first-of-type ul{margin:0 0 10px 0;}
-	#topbar #searchform{display:none;}/* This is personal preference - remove if not required */
+	#topbar #searchform{display:none;}
 
 	#header{text-align:center;}
 	#header #logo{margin:0 0 15px 0;}
