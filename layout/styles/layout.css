@@ -46,7 +46,7 @@
 		}
 
 
-#pageintro{padding:200px 0 400px;}/* 400px => 200px for #introblocks negative margin */
+#pageintro{padding:200px 0 400px;}
 
 #pageintro article, #pageintro article p{display:block; max-width:75%; margin:0 auto; text-align:center;}
 #pageintro article p{max-width:65%; line-height:2rem;}
@@ -64,7 +64,7 @@
 .sectiontitle *{margin:0;}
 
 
-#introblocks{display:block; position:relative; margin:-280px 0 0 0; z-index:1; text-align:center;}/* 280px => 200px + container padding */
+#introblocks{display:block; position:relative; margin:-280px 0 0 0; z-index:1; text-align:center;}
 #introblocks figure{display:block; position:relative; max-width:348px; text-align:center;}
 #introblocks figure figcaption{display:block; position:absolute; bottom:0; width:100%; padding:0 20px;}
 #introblocks figure figcaption *{margin:0; padding:0;}
@@ -76,14 +76,14 @@
 
 .imgroup{}
 .imgroup li{margin-bottom:50px;}
-.imgroup li:nth-last-child(-n+3){margin-bottom:0;}/* Removes bottom margin from the last three items - margin is restored in the media queries when items stack */
-.imgroup li:nth-child(3n+1){margin-left:0; clear:left;}/* Removes the need to add class="first" */
+.imgroup li:nth-last-child(-n+3){margin-bottom:0;}
+.imgroup li:nth-child(3n+1){margin-left:0; clear:left;}
 
 .round-images {
 	border-radius: 50px;
 }
 .team{}
-.team li:last-child{margin-bottom:0;}/* Used when elements stack in small viewports */
+.team li:last-child{margin-bottom:0;}
 .team figure{display:block; text-align:center;}
 .team figure *{margin:0; padding:0;}
 .team figure a{}
@@ -95,12 +95,11 @@
 
 .clients{text-align:center;}
 .clients li{margin-bottom:20px;}
-.clients li:nth-last-child(-n+4){margin-bottom:0;}/* Removes bottom margin from the last four items - margin is restored in the media queries when items stack */
-.clients li:nth-child(4n+1){margin-left:0; clear:left;}/* Removes the need to add class="first" */
-
+.clients li:nth-last-child(-n+4){margin-bottom:0;}
+.clients li:nth-child(4n+1){margin-left:0; clear:left;}
 
 #testimonials{text-align:center;}
-#testimonials li:last-child{margin-bottom:0;}/* Used when elements stack in smaller viewports */
+#testimonials li:last-child{margin-bottom:0;}
 #testimonials blockquote{max-width:80%; margin:0 auto 30px; padding:20px; line-height:2rem; font-size:1.2rem;}
 #testimonials blockquote::before{top:10px; left:10px;}
 #testimonials blockquote::after{display:block; position:absolute; bottom:-15px; left:50%; margin-left:-15px; width:0; height:0; content:""; border:15px solid transparent; border-bottom:none;}
@@ -112,7 +111,7 @@
 
 
 #latest{}
-#latest > li:last-child{margin-bottom:0;}/* Used when elements stack in small viewports */
+#latest > li:last-child{margin-bottom:0;}
 #latest article{}
 #latest article figure{}
 #latest article figure img{}
@@ -180,9 +179,9 @@
 
 #footer .latestimg{}
 #footer .latestimg > li{display:inline-block; float:left; width:30%; margin:0 0 5% 5%;}
-#footer .latestimg > li:nth-last-child(-n+3){margin-bottom:0;}/* Removes bottom margin from the last three items - margin is restored in the media queries when items stack */
-#footer .latestimg > li:nth-child(3n+1){margin-left:0; clear:left;}/* Removes the need to add class="first" */
-#footer .latestimg > li img{width:100%;}/* Force the image to resize to take the full space - may have to be changed for tablets, depends on personal preference */
+#footer .latestimg > li:nth-last-child(-n+3){margin-bottom:0;}
+#footer .latestimg > li:nth-child(3n+1){margin-left:0; clear:left;}
+#footer .latestimg > li img{width:100%;}
 /* #footer .latestimg > li a.imgover{display:block;} */
 
 
@@ -279,7 +278,7 @@ td{border-width:0 1px;}
 
 body{color:#A5A6AA; background-color:#161C21;}
 a{color:#FF4242;}
-a:active, a:focus{background:transparent !important;}/* IE10 + 11 Bugfix - prevents grey background */
+a:active, a:focus{background:transparent !important;}
 hr, .borderedbox{border-color:#D7D7D7;}
 label span{color:#FF0000; background-color:inherit;}
 input:focus, textarea:focus, *:required:focus{border-color:#FF4242 !important;}
@@ -372,7 +371,7 @@ input:focus, textarea:focus, *:required:focus{border-color:#FF4242 !important;}
 #mainav{}
 #mainav li a{color:inherit;}
 #mainav .active a, #mainav a:hover, #mainav li:hover > a{color:#FF4242; background-color:inherit;}
-#mainav li li a, #mainav .active li a{color:#FFFFFF; background-color:rgb(255, 66, 66, .5);/* #FF4242 */ ;}
+#mainav li li a, #mainav .active li a{color:#FFFFFF; background-color:rgb(255, 66, 66, .5);}
 #mainav li li:hover > a, #mainav .active .active > a{color:#FFFFFF; background-color:#FF4242;}
 #mainav form select{color:#474747; background-color:#FFFFFF;}
 
@@ -444,7 +443,7 @@ table a, #comments a{background-color:inherit;}
 @media screen and (max-width:750px){
 	.imgl, .imgr{display:inline-block; float:none; margin:0 0 10px 0;}
 	.fl_left, .fl_right{display:block; float:none;}
-	.group .group > *:last-child, .clear .clear > *:last-child, .clear .group > *:last-child, .group .clear > *:last-child{margin-bottom:0;}/* Experimental - Needs more testing in different situations, stops double margin when stacking */
+	.group .group > *:last-child, .clear .clear > *:last-child, .clear .group > *:last-child, .group .clear > *:last-child{margin-bottom:0;}
 	.one_half, .one_third, .two_third, .one_quarter, .two_quarter, .three_quarter{display:block; float:none; width:auto; margin:0 0 30px 0; }
 
 	#topbar{text-align:center;}
@@ -460,13 +459,13 @@ table a, #comments a{background-color:inherit;}
 	.sectiontitle{max-width:none;}
 	
 	#introblocks > ul{margin:0 auto 80px;}
-	#introblocks > ul, #latest article{max-width:348px;}/* Restrict the width to the one_third grid element */
-	.team figure{max-width:300px;}/* Restrict the width to the image width */
+	#introblocks > ul, #latest article{max-width:348px;}
+	.team figure{max-width:300px;}
 	#introblocks > ul > li, .imgroup li:nth-last-child(-n+3){margin-bottom:50px;}
 	.clients li:nth-last-child(-n+4){margin-bottom:20px;}
 	#introblocks > ul > li:last-child, .imgroup li:last-child, .clients li:last-child{margin-bottom:0;}
 
-	#footer{padding-bottom:50px;}/* Not needed - just looks better */
+	#footer{padding-bottom:50px;}
 	#footer .latestimg > li, #footer .latestimg > li:nth-last-child(-n+3){display:inline-block; float:none; width:auto; margin:0 5% 5% 0;}
 	#footer .latestimg > li:last-child{margin-bottom:0;}
 	#footer .latestimg > li img{width:auto;}
